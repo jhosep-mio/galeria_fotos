@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+
+.container_header {
+  width: 100%;
+  margin-bottom: 40px;
+  height: 100px;
+  background-image: url("https://us.123rf.com/450wm/alonastep/alonastep1702/alonastep170200449/72023735-corazones-dorados-de-patrones-sin-fisuras-brillo-dorado-y-plantilla-negra-textura-geom%C3%A9trica-abstrac.jpg");
+}
+
+.container_nav {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+}
+
+.container_nav ul {
+  width: 40%;
+  margin: 0 auto;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: red;
+}
+
+.img_redonda {
+  width: 75px;
+  height: 75px;
+  border-radius: 37px;
+  border: 2px solid white;
+}
+.contendor_main {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.container_gallery {
+  display: grid;
+  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  grid-template-columns: auto auto auto;
+}
+
+.img {
+  width: 300px;
+}
+
+.img_nosotros {
+  width: 100%;
+  height: 100%;
+  transition: all 300ms;
+}
+
+.img_nosotros:hover {
+  width: 120%;
+  height: 120%;
+}
+.container_gallery {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.li {
+  width: 250px;
+  height: 450px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0px 5px 15px #ddd;
+}
+
+.main_gallery {
+  width: 60%;
+  margin: 0 auto;
+}
+.main_mucho{
+  height: 600px;
+}
+.contenido_mucho{
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.title, .contenido{
+  color: white;
+}
+
+.contenido{
+  font-size: 25px;
+  color: #ddd;
+  text-align: justify ;
+}
+.title{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("./imagenes/logo2.jpeg");
+}
+
+.inactive{
+    display: none;
+}
+
+@media (max-width: 1480px) {
+  .container_nav ul {
+    width: 60%;
+  }
+  .main_gallery {
+    width: 70%;
+  }
+
+  .contenido_mucho{
+    width: 50%;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container_nav ul {
+    width: 80%;
+  }
+  .main_gallery {
+    width: 60%;
+  }
+  .container_gallery {
+    grid-template-columns: auto auto;
+  }
+  .contenido_mucho{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 780px) {
+  .container_nav ul {
+    width: 90%;
+  }
+  .link {
+    font-size: 20px;
+  }
+  .container_gallery {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .contenido{
+    padding-bottom: 60px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+    .contendor_main{
+      padding-bottom: 50px;
+    }
+    .container_nav ul {
+        margin-left: -5px;
+    }
+    .active{
+        display: none;
+    }
+    .inactive{
+        display: block;
+    }
+}
